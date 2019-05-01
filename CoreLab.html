@@ -6,7 +6,12 @@
  </title>
  <link rel="stylesheet" type="text/css" href="css/design.css">
  <link rel="stylesheet" type="text/css" href="css/styles.css">
- 
+ <link rel="stylesheet" type="text/css" href="css/animate.css">
+ <!-- google fonts prompt -->
+ <link href="https://fonts.googleapis.com/css?family=Prompt:400,700|Anton" rel="stylesheet">
+ <!-- animate on scroll CDN -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
  <link rel="stylesheet" media="(max-width: 480px)" href="css/mediares.css">
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,8 +27,8 @@
 <div class="col-sm-12"> 
 <div id="heading">
    <img src="img/LOGO.jpg" class="responsive"width="200px"height="100px" style="float:left;">
-  <h1>AMRITA CORE LAB </h1>
-  <h2><strong>CO</strong>mputational thinking <strong>R</strong>easearch and <strong>E</strong>ducation Lab<h2>
+  <h1 class="title animated fadeInDown">AMRITA CORE LAB </h1>
+  <h2 class="animated fadeInDown delay-1s" style="margin-top: 20px; padding-bottom: 20px;"><strong>CO</strong>mputational thinking <strong>R</strong>easearch and <strong>E</strong>ducation Lab<h2>
  </div>
  </div>
  </div>
@@ -52,7 +57,7 @@
         <span class="icon-bar"></span>                        
       </button>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse navigationBar" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
       </ul>
@@ -139,45 +144,47 @@
   <script src="js/TopNav.js"></script>
    <div class="container">
   <div class="row">
-     <div class="col-md-4">
+     <div class="col-md-4 tabs">
     <div class="panel panel-default">
-      <div class="panel-heading text-center">
+      <div class="panel-heading text-center animated fadeInDown delay-1s">
       On Going Projects
       </div>
       <div class="panel-body">
-      <p>Know about the various current projects in the lab ...</p>
-      <a href="ongoing.html"><img src ="img/img.jpg" class="img-responsive center-block" width="250px" height="250px" ></a>
+      <p class="animated fadeInDown delay-1s">Know about the various current projects in the lab</p>
+      <a href="ongoing.html"><img src ="img/img.jpg" class="img-responsive center-block" usemap="#workmap" width="250px" height="250px" ></a>
       </div>
     </div>
-   </div>  
-  <div class="col-md-4">
+   </div>
+
+  <div class="col-md-4  tabs">
     <div class="panel panel-default"> 
-    <div class="panel-heading text-center">
+    <div class="panel-heading text-center animated fadeInDown delay-1s">
     Members
     </div>
     <div class="panel-body"> 
-    <p>Details about the various members across different Departments,who are Involved in the Projects ...</p>
+    <p class="animated fadeInDown delay-1s">Details about the various members across different Departments,who are Involved in the Projects</p>
     <a href="members.html"><img src ="img/mem.png" class="img-responsive center-block" width="200px" height="200px" ></a>
     </div>
     </div>
    </div>
-   <div class="col-md-4">
+   <div class="col-md-4  tabs">
    <div class="panel panel-default">   
-    <div class="panel-heading text-center">Announcements</div>
-    <div class="panel-body">  <p>Get to know about our updates and announcements </p>
+      <div class="panel-heading text-center animated fadeInDown delay-1s">Announcements</div>
+    <div class="panel-body">  <p class="animated fadeInDown delay-1s">Get to know about our updates and announcements </p>
     <a href="Announcements.html"><img src ="img/ann.jpg" class="img-responsive center-block" width="150px" height="120px" ></a>
   </div>
 
   </div>
 </div>
+
    <div class="container">
   <div class="row">
    
  <div class="col-sm-12">
-       <div class="panel panel-default">   
+       <div class="panel panel-default"  data-aos="zoom-in-down">   
     <div class="panel-heading text-center">Important Updates</div>
     <div class="content-slider">
-  <div class="slider">
+  <div class="slider sliderFonts">
     <div class="mask">
       <ul>
         <li class="anim1">
@@ -190,7 +197,7 @@
         </li>
         <li class="anim3">
           <div class="quote">X-Ray digitizer completed</div>
-          <div class="source">- Shanmuga Velayutham</div>
+          <div class="source">- CK Shyamala</div>
         </li>
         <li class="anim4">
           <div class="quote">Now accepting IOT based project proposals.</div>
@@ -207,23 +214,28 @@
 </div>
 
   </div>
-  <footer class="container-fluid text-center  bg-4">
-    <div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <p>Contact us and we'll get back to you within 24 hours.</p>
-  <div class="row">
-    <div class="col-sm-6">
-      
-      <p><span class="glyphicon glyphicon-user"></span>Core Lab Team</p>
+<div class="contactUs" data-aos="zoom-in-down"> 
+    <div class="row">
+      <div class="col-sm-12">
+        <p class="contactUsHeader">Contact Us</p>
+        <p class="contactUsSubHeader">We Will get back to you within 24 Hours</p>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-6 names">
+      <p><span class="glyphicon glyphicon-user"></span> Core Lab Team</p>
       <p><span class="glyphicon glyphicon-envelope"></span> corelab@cb.amrita.edu</p>
     </div>
-    <div class="col-sm-6">
-      <p><span class="glyphicon glyphicon-user"></span>Ritwik M</p>
+    <div class="col-sm-6 names">
+      <p><span class="glyphicon glyphicon-user"></span> Ritwik M</p>
       <p><span class="glyphicon glyphicon-envelope"></span> m_ritwik@cb.amrita.edu</p>
     </div>
-
   </div>
-</div>
-</footer>
+</div> 
+<!-- animate on scroll JS CDN -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
+<script>
+  AOS.init(1000);
+</script>

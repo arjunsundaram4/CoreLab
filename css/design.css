@@ -39,15 +39,17 @@ footer
 /*styling for the contact US div*/
 .contactUsHeader{
   text-align: center;
-  margin-top: 70px;
+  margin-top: 45px;
   font-family: 'Anton', sans-serif;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .contactUs{
   background-color: black;
-  min-height: 400px;
+  min-height: 25px;
   color: white;
+  margin-top:0px;
+  margin-bottom:0px;
 }
 
 .contactUsSubHeader{
@@ -60,7 +62,7 @@ footer
 
 .names{
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 20px;
   font-family: 'Prompt', sans-serif;
 }
