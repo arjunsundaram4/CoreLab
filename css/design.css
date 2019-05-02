@@ -46,24 +46,25 @@ footer
 
 .contactUs{
   background-color: black;
-  min-height: 25px;
+  min-height: 10px;
   color: white;
   margin-top:0px;
+  font-size:20px;
   margin-bottom:0px;
 }
 
 .contactUsSubHeader{
   text-align: center;
   font-family: 'Anton', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-style: italic;
 
 }
 
 .names{
   text-align: center;
-  margin-top: 30px;
-  font-size: 20px;
+  margin-top: 20px;
+  font-size: 15px;
   font-family: 'Prompt', sans-serif;
 }
 
