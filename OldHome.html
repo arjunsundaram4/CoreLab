@@ -7,12 +7,11 @@
  <link rel="stylesheet" type="text/css" href="css/design.css">
  <link rel="stylesheet" type="text/css" href="css/styles.css">
  <link rel="stylesheet" type="text/css" href="css/animate.css">
- <link rel="stylesheet" type="text/css" href="css/VerticalTabs.css">
  <!-- google fonts prompt -->
  <link href="https://fonts.googleapis.com/css?family=Prompt:400,700|Anton" rel="stylesheet">
  <!-- animate on scroll CDN -->
  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
  <link rel="stylesheet" media="(max-width: 480px)" href="css/mediares.css">
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,6 +32,22 @@
  </div>
  </div>
  </div>
+ <!--navbar   <nav class="navbar navbar-default">
+    <div class="collapse navbar-collapse">
+    <div class="navbar-header">
+      <a class="navbar-brand" <a href="./CoreLab.html">Home</a>
+    </div>
+  
+    <ul class="nav navbar-nav navbar-right" style="float-right">
+      <li class="active"></li>
+      <li> <a href="#" class="navbar-nav pull-right">About</a></li>
+      <li><a href="#" class="navbar-nav pull-right">Projects</a></li>
+      <li><a href="#" class="navbar-nav pull-right">Contact</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>-->
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -44,16 +59,31 @@
     </div>
     <div class="collapse navbar-collapse navigationBar" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+        <li class="active"><a href="#">Home</a></li>
       </ul>
             <ul class="nav navbar-nav navbar-right">
-      <li> <a href="About.html" ><i class="glyphicon glyphicon-pencil"></i>About</a></li>
-      <li><a href="ongoing.html" ><i class="glyphicon glyphicon-file"></i>Projects</a></li>
-      <li><a href="members.html"><i class="fa fa-fw fa-user"></i>Members</a></li>
+      <li> <a href="About.html" >About</a></li>
+      <li><a href="ongoing.html" >Projects</a></li>
+      <li><a href="members.html">Members</a></li>
     </ul>
       </div>
     </div>
   </nav>
+  
+  
+<!-- Dropdown button
+<div class="container">
+  <div class="dropdown,nav navbar-nav navbar-right">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">More
+    <span class="caret">
+    </span></button>
+    <ul class="dropdown-menu" >
+      <li><a href="#" class="navbar-nav pull-right">About</a></li>
+      <li><a href="#" class="navbar-nav pull-right">Projects</a></li>
+      <li><a href="#" class="navbar-nav pull-right">Contact</a></li>
+    </ul>
+  </div>
+</div>!-->
  <div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -101,61 +131,62 @@
  </div>
  <br>
  <br>
+ <!--<div class='container'>
+      <div class='row'>
+         <div class='col-md-3 col-md-offset-2 panel'<a href=""><img src ="img/projects.jpg" width="200px" height="200px" ></a></div>
+        <div class='col-md-3 panel' <a href=""><img src ="img/members.jpg" width ="200px" height="200px" ></a></div>
+        <div class='col-md-3 panel' <a href=""><img src ="img/faculty.jpg" width ="200px" height="200px" ></a></div>
+        
+       
+      </div>
+    </div>-->
   <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
   <script src="js/TopNav.js"></script>
-  
-  
-  
- <div class="container">
-	<div class="tab">
-	<button class="sidebarlinks" onclick="openoption(event,'announ')" id="defaultOpen"><h4>Announcements</h4></button>
-	<button class="sidebarlinks" onclick="openoption(event,'ongo')"><h4>On Going Projects</h4></button>
-	<button class="sidebarlinks" onclick="openoption(event,'mem')"><h4>Members</h4></a></button>
-	</div>
-	
-	
-	
-	<div id="announ" class="slidebarcontent">
-	<h2>Announcements</h2>
-	<br>
-    <p>Get to know about our updates and announcements </p>
-	<br>
-    <a href="Announcements.html"><img src ="img/ann.jpg" class="img-responsive center-block" width="225px" height="225px" ></a>
-	</div>
-	
-	<div id="ongo" class="slidebarcontent">
-	<h2>On Going Projects</h2>
-	<p>Know about the various current projects in the lab</p>
-	<a href="ongoing.html"><img src ="img/img.jpg" class="img-responsive center-block" width="500px" height="500px" ></a> 
-	</div>
-	
-	<div id="mem" class="slidebarcontent">
-	<h2>Members</h2>
-	<p>Details about the various members across different Departments,who are Involved in the Projects</p>
-    <a href="members.html"><img src ="img/mem.png" class="img-responsive center-block" width="500px" height="500px" ></a>
-	</div>
-	
-   </div> 
-<script>
-function openoption(evt,Name) {
-  var i, slidebarcontent,sidebarlinks;
-  slidebarcontent = document.getElementsByClassName("slidebarcontent");
-  for (i = 0; i < slidebarcontent.length; i++) {
-    slidebarcontent[i].style.display = "none";
-  }
-  sidebarlinks = document.getElementsByClassName("sidebarlinks");
-  for (i = 0; i < sidebarlinks.length; i++) {
-    sidebarlinks[i].className = sidebarlinks[i].className.replace(" active", "");
-  }
-  document.getElementById(Name).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
    <div class="container">
-  <div class="row">   
+  <div class="row">
+     <div class="col-md-4 tabs">
+    <div class="panel panel-default">
+      <!--<div class="panel-heading text-center animated fadeInDown delay-1s">-->
+	  <div class="panel-heading text-center">
+      On Going Projects
+      </div>
+      <div class="panel-body">
+      <!--<p class="animated fadeInDown delay-1s">Know about the various current projects in the lab</p>-->
+	  <p>Know about the various current projects in the lab</p>
+      <a href="ongoing.html"><img src ="img/img.jpg" class="img-responsive center-block" usemap="#workmap" width="250px" height="250px" ></a>
+      </div>
+    </div>
+   </div>
+
+  <div class="col-md-4  tabs">
+    <div class="panel panel-default"> 
+    <!--<div class="panel-heading text-center animated fadeInDown delay-1s">-->
+	<div class="panel-heading text-center">
+    Members
+    </div>
+    <div class="panel-body"> 
+    <!--<p class="animated fadeInDown delay-1s">Details about the various members across different Departments,who are Involved in the Projects</p>-->
+	<p>Details about the various members across different Departments,who are Involved in the Projects</p>
+    <a href="members.html"><img src ="img/mem.png" class="img-responsive center-block" width="200px" height="200px" ></a>
+    </div>
+    </div>
+   </div>
+   <div class="col-md-4  tabs">
+   <div class="panel panel-default">       
+	 <!--<div class="panel-heading text-center animated fadeInDown delay-1s">Announcements</div>-->
+	 <div class="panel-heading text-center ">Announcements</div>
+    <div class="panel-body"> 
+	<!--<p class="animated fadeInDown delay-1s">Get to know about our updates and announcements </p>-->
+	<p>Get to know about our updates and announcements </p>
+    <a href="Announcements.html"><img src ="img/ann.jpg" class="img-responsive center-block" width="150px" height="120px" ></a>
+  </div>
+
+  </div>
+</div>
+
+   <div class="container">
+  <div class="row">
+   
  <div class="col-sm-12">
        <div class="panel panel-default"  data-aos="zoom-in-down">   
     <div class="panel-heading text-center">Important Updates</div>
