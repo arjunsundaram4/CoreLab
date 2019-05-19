@@ -1,3 +1,27 @@
+.change
+{
+	margin-bottom:10px;
+	padding:5px;
+	margin-top:10px;
+}
+.change #c1
+{
+	padding:25px;
+	background-color:lavender;
+	width:33.33%;
+}
+.change #c2
+{
+	padding:25px;
+	background-color:lavenderblush;
+	width:33.33%;
+}
+.change #c3
+{
+	padding:25px;
+	background-color:lavender;
+	width:33.33%;
+}
 
 navbar{
 	background-color: #212121;
